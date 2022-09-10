@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(230, 197, 5);
+}
+.bg{
+    background-color: rgb(42, 42, 105);
+}
+.nav-link div ul{
+    display: none;
+    position: absolute;
+}
+
+.nav-link div:hover ul{
+    display: block;
+}
