@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background: rgb(140,140,251) !important;
+            background: linear-gradient(90deg, rgba(140,140,251,1) 2%, rgba(105,99,210,1) 50%, rgba(0,212,255,1) 100%) !important;
+        }
+    </style>
+    <title>Log-In</title>
+</head>
+<body>
+    <div class="h-full">
+        <div class="bg h-auto py-10 lg:flex lg:my-28 lg:px-16 lg:w-max lg:mx-auto lg:h-auto lg:rounded-2xl">
+            <div class="py-6 bg px-16 lg:py-20">
+                <img src="image/logo-nb.png" alt="Lumbini ICT" class="w-max mx-auto sm:w-28 lg:w-40">
+                <h1 class="text-center text-2xl cursor-default font-bold">Welcome To Lumbini</h1>
+                <h1 class="text-center text-2xl cursor-default font-bold">ICT College</h1>
+            </div>
+            <div class="mx-auto lg:px-16 sm:mx-52 py-4 log lg:mx-auto sm:rounded-2xl">
+                <div class="mt-10">
+                    <h1 class="text-center font-bold text-2xl cursor-default">log-In</h1>      
+                </div>
+                <div class="w-max mx-auto my-8">
+                    <form action="home.html" method="post" name="login" onsubmit="return logvalid()">
+                        <div>
+                            <input type="text" name="username" id="username" placeholder="Enter Your Username" class="border-2 rounded pl-2 ml-6 lg:ml-0 mb-4 lg:w-60 focus:outline-none focus:border-orange-400">
+                        </div>
+                        <div>
+                            <input type="password" name="password" id="password" placeholder="Enter Your Password" class="border-2 rounded pl-2 ml-6 lg:ml-0 mb-4 lg:w-60 focus:outline-none focus:border-orange-400">
+                        </div>
+                        <div>
+                            <p class="cursor-default">Forgot Your Password?<a class="text-blue-500" href="#">Click Here</a></p>
+                        </div>
+                        <div class="my-6 mx-auto w-max">
+                            <button type="submit" class="bg-white sm:bg-indigo-900 font-bold rounded-2xl px-6 py-1 hover:text-yellow-400">Log-In</button>
+                        </div>
+                        <div class="my-4 mx-auto w-max">
+                            <a href="#" class="bg-white sm:bg-indigo-900 font-bold rounded-2xl px-4 py-1 hover:text-yellow-400">Sign-Up</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
